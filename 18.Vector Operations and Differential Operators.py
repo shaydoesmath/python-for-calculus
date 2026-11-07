@@ -34,14 +34,14 @@ result = np.cross(A, B, axis=-1) #Gets very complicated generalizing past 3D so 
 def divergence(components, coordinates):
     n = len(components)
     div = np.zeros_like(components[0], dtype=float)
-    # Reverse coordinate order to match NumPy array axes
-    array_coords = coordinates[::-1]
+
     for i in range(n):
         derivatives = np.gradient(
             components[i],
-            *array_coords
+            *coordinates
         )
-        div += derivatives[n - 1 - i]
+        div += derivatives[i]
+
     return div
 #e.g 
 x = np.array([0, 1, 2])
