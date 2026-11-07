@@ -1,5 +1,5 @@
 #19.Jacobian
-#Suppose we have 𝐅(𝓍, 𝓎) = [ 𝐹₁(𝓍, 𝓎) , 𝐹₂(𝓍, 𝓎) ]ᵀ
+#Suppose we have F(x, y) = [ F₁(x, y) , F₂(x, y) ]ᵀ
 #Then 𝑱_𝐅 = [ ∂𝐹₁/∂𝓍   ∂𝐹₁/∂𝓎 ; ∂𝐹₂/∂𝓍   ∂𝐹₂/∂𝓎 ]
 #Lets go through an example 
 import numpy as np
