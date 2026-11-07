@@ -1,4 +1,4 @@
-#13.∇f 
+#14.∇f 
 #We code ∇f as the array of all the partials  
 import numpy as np
 x = np.array([0, 1, 2, 3])
